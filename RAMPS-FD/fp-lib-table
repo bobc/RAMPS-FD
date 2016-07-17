@@ -1,0 +1,10 @@
+(fp_lib_table
+  (lib (name discret)(type Legacy)(uri "$(KIPRJMOD)\\footprints\\discret.mod")(options "")(descr ""))
+  (lib (name libcms)(type Legacy)(uri "$(KIPRJMOD)\\footprints\\libcms.mod")(options "")(descr ""))
+  (lib (name pin_array)(type Legacy)(uri "$(KIPRJMOD)\\footprints\\pin_array.mod")(options "")(descr ""))
+  (lib (name smd_resistors)(type Legacy)(uri "$(KIPRJMOD)\\footprints\\smd_resistors.mod")(options "")(descr ""))
+  (lib (name w_conn_screw)(type Legacy)(uri "$(KIPRJMOD)\\footprints\\w_conn_screw.mod")(options "")(descr ""))
+  (lib (name w_pin_strip)(type Legacy)(uri "$(KIPRJMOD)\\footprints\\w_pin_strip.mod")(options "")(descr ""))
+  (lib (name w_smd_diode)(type Legacy)(uri "$(KIPRJMOD)\\footprints\\w_smd_diode.mod")(options "")(descr ""))
+  (lib (name rmc)(type KiCad)(uri "$(KIPRJMOD)\\footprints\\rmc.pretty")(options "")(descr ""))
+)

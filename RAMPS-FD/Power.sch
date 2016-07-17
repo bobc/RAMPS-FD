@@ -1,0 +1,926 @@
+EESchema Schematic File Version 2
+LIBS:RAMPS-FD-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:RMC
+LIBS:RAMPS-FD-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 10
+Title "RAMPS-FD (RAMPS for Arduino Due)"
+Date "2016-07-17"
+Rev "v2.2"
+Comp ""
+Comment1 "Derived from RAMPS 1.4 reprap.org/wiki/RAMPS1.4"
+Comment2 "GPL v3"
+Comment3 "Bob Cousins 2016"
+Comment4 ""
+$EndDescr
+Text Notes 1550 3875 0    50   ~ 0
+JP102 - VSEL - Select voltage\n1-2 = POWER_IN = 24 V (or > 15V)\n2-3 = POWER_IN = 12 V (or < 15V)
+$Comp
+L PWR_FLAG #FLG010
+U 1 1 523A3EED
+P 4200 4850
+F 0 "#FLG010" H 4200 4945 30  0001 C CNN
+F 1 "PWR_FLAG" H 4200 5030 30  0000 C CNN
+F 2 "" H 4200 4850 60  0001 C CNN
+F 3 "" H 4200 4850 60  0001 C CNN
+	1    4200 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12P #PWR011
+U 1 1 523A3ECD
+P 3950 4800
+F 0 "#PWR011" H 3950 4650 50  0001 C CNN
+F 1 "+12P" H 3950 4940 50  0000 C CNN
+F 2 "" H 3950 4800 50  0000 C CNN
+F 3 "" H 3950 4800 50  0000 C CNN
+	1    3950 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMP_MINI_3 JP102
+U 1 1 523A3E0D
+P 2850 4700
+F 0 "JP102" H 2850 5000 60  0000 C CNN
+F 1 "VSEL" H 2850 4875 60  0000 C CNN
+F 2 "w_pin_strip:pin_strip_3" H 2850 4700 60  0001 C CNN
+F 3 "" H 2850 4700 60  0001 C CNN
+	1    2850 4700
+	1    0    0    -1  
+$EndComp
+Text Notes 4650 4750 0    60   ~ 0
+Low power MOSFETS (fans etc)\nalso input to Due/Mega
+Text GLabel 5100 6725 1    50   Input ~ 0
+IOREF
+Text Notes 10150 5600 0    60   ~ 0
+Aux Power output
+Text GLabel 4925 5525 3    60   Output ~ 0
+AM-VIN
+$Comp
+L JUMP_MINI JP1
+U 1 1 523A08CA
+P 3950 5500
+F 0 "JP1" H 3950 5400 60  0000 C CNN
+F 1 "VIN" H 3950 5300 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3950 5500 60  0001 C CNN
+F 3 "" H 3950 5500 60  0001 C CNN
+	1    3950 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR012
+U 1 1 51B4F503
+P 6350 7150
+F 0 "#PWR012" H 6350 7000 50  0001 C CNN
+F 1 "VCC" H 6350 7300 50  0000 C CNN
+F 2 "" H 6350 7150 50  0000 C CNN
+F 3 "" H 6350 7150 50  0000 C CNN
+	1    6350 7150
+	1    0    0    -1  
+$EndComp
+Text Notes 4350 7750 0    50   ~ 0
+VLOG - Select logic voltage\n1-2 = Autoselect by IOREF\n2-3 = 5V
+$Comp
+L PWR_FLAG #FLG013
+U 1 1 51AE545A
+P 8500 3625
+F 0 "#FLG013" H 8500 3720 30  0001 C CNN
+F 1 "PWR_FLAG" H 8500 3805 30  0000 C CNN
+F 2 "" H 8500 3625 60  0001 C CNN
+F 3 "" H 8500 3625 60  0001 C CNN
+	1    8500 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR015
+U 1 1 51AE537B
+P 8500 3750
+AR Path="/51AE537B" Ref="#PWR015"  Part="1" 
+AR Path="/5239FE5C/51AE537B" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 8500 3750 30  0001 C CNN
+F 1 "GND" H 8500 3680 30  0001 C CNN
+F 2 "" H 8500 3750 60  0001 C CNN
+F 3 "" H 8500 3750 60  0001 C CNN
+	1    8500 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR015
+U 1 1 51AE535E
+P 7900 2300
+F 0 "#PWR015" H 7900 2100 50  0001 C CNN
+F 1 "GNDPWR" H 7900 2170 50  0000 C CNN
+F 2 "" H 7900 2250 50  0000 C CNN
+F 3 "" H 7900 2250 50  0000 C CNN
+	1    7900 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P108
+U 1 1 51AA108A
+P 4350 3100
+F 0 "P108" V 4300 3100 40  0000 C CNN
+F 1 "POWER_IN" V 4400 3100 40  0000 C CNN
+F 2 "w_conn_screw:mstba_2,5%2f2-g-5,08" H 4350 3100 60  0001 C CNN
+F 3 "" H 4350 3100 60  0001 C CNN
+	1    4350 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_2 P101
+U 1 1 51AA1077
+P 4350 1250
+F 0 "P101" V 4300 1250 40  0000 C CNN
+F 1 "HB_IN" V 4400 1250 40  0000 C CNN
+F 2 "w_conn_screw:mstba_2,5%2f2-g-5,08" H 4350 1250 60  0001 C CNN
+F 3 "" H 4350 1250 60  0001 C CNN
+	1    4350 1250
+	-1   0    0    1   
+$EndComp
+Text Label 4800 2000 0    50   ~ 0
+MOT_IN
+Text Label 4850 1150 0    50   ~ 0
+HB_IN
+$Comp
+L GNDPWR #PWR016
+U 1 1 51A9FFA1
+P 7600 3750
+F 0 "#PWR016" H 7600 3550 50  0001 C CNN
+F 1 "GNDPWR" H 7600 3620 50  0000 C CNN
+F 2 "" H 7600 3700 50  0000 C CNN
+F 3 "" H 7600 3700 50  0000 C CNN
+	1    7600 3750
+	1    0    0    -1  
+$EndComp
+Text GLabel 6100 2200 0    50   UnSpc ~ 0
+MOT_GND
+$Comp
+L PWR_FLAG #FLG017
+U 1 1 5179AAFA
+P 5850 6950
+F 0 "#FLG017" H 5850 7045 30  0001 C CNN
+F 1 "PWR_FLAG" H 5850 7130 30  0000 C CNN
+F 2 "" H 5850 6950 60  0001 C CNN
+F 3 "" H 5850 6950 60  0001 C CNN
+	1    5850 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG018
+U 1 1 5179AA30
+P 4400 5400
+F 0 "#FLG018" H 4400 5495 30  0001 C CNN
+F 1 "PWR_FLAG" H 4400 5580 30  0000 C CNN
+F 2 "" H 4400 5400 60  0001 C CNN
+F 3 "" H 4400 5400 60  0001 C CNN
+	1    4400 5400
+	1    0    0    -1  
+$EndComp
+Text GLabel 3025 7450 2    50   Input ~ 0
+PS-ON
+Text Notes 1850 3025 0    60   ~ 0
+Medium power MOSFETS \n(extruder heaters, fans)
+Text Notes 2000 1300 0    60   ~ 0
+Heatbed Only: 12-24V, 15A
+Text Notes 2300 2150 0    60   ~ 0
+Motors only,  12-24V
+$Comp
+L JUMP_MINI_3 JP101
+U 1 1 51786528
+P 5100 7050
+F 0 "JP101" V 5050 7350 60  0000 C CNN
+F 1 "VLOG" V 5150 7325 60  0000 C CNN
+F 2 "w_pin_strip:pin_strip_3" H 5100 7050 60  0001 C CNN
+F 3 "" H 5100 7050 60  0001 C CNN
+	1    5100 7050
+	0    -1   1    0   
+$EndComp
+$Comp
+L +V_LOGIC #PWR019
+U 1 1 517864B3
+P 5500 6900
+F 0 "#PWR019" H 5500 6870 30  0001 C CNN
+F 1 "+V_LOGIC" H 5500 7000 30  0000 C CNN
+F 2 "" H 5500 6900 60  0001 C CNN
+F 3 "" H 5500 6900 60  0001 C CNN
+	1    5500 6900
+	1    0    0    -1  
+$EndComp
+Text Label 4800 3000 0    60   ~ 0
+P_IN
+$Comp
+L FUSE F103
+U 1 1 5176EAAB
+P 5450 2000
+F 0 "F103" H 5350 1950 40  0000 C CNN
+F 1 "FUSE 10A" H 5400 2150 40  0000 C CNN
+F 2 "rmc:FUSE-MINI-AUTO" H 5450 2000 60  0001 C CNN
+F 3 "" H 5450 2000 60  0001 C CNN
+	1    5450 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG020
+U 1 1 5176EA8B
+P 6600 2000
+F 0 "#FLG020" H 6600 2095 30  0001 C CNN
+F 1 "PWR_FLAG" H 6600 2180 30  0000 C CNN
+F 2 "" H 6600 2000 60  0001 C CNN
+F 3 "" H 6600 2000 60  0001 C CNN
+	1    6600 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +V_MOTOR #PWR021
+U 1 1 5176EA85
+P 6450 1800
+F 0 "#PWR021" H 6450 1770 30  0001 C CNN
+F 1 "+V_MOTOR" H 6450 1900 30  0000 C CNN
+F 2 "" H 6450 1800 60  0001 C CNN
+F 3 "" H 6450 1800 60  0001 C CNN
+	1    6450 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +V_HEATBED #PWR022
+U 1 1 5176EA3A
+P 6400 950
+F 0 "#PWR022" H 6400 920 30  0001 C CNN
+F 1 "+V_HEATBED" H 6400 1050 30  0000 C CNN
+F 2 "" H 6400 950 60  0001 C CNN
+F 3 "" H 6400 950 60  0001 C CNN
+	1    6400 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +V_POWER #PWR023
+U 1 1 5176EA28
+P 7350 2800
+F 0 "#PWR023" H 7350 2770 30  0001 C CNN
+F 1 "+V_POWER" H 7350 2900 30  0000 C CNN
+F 2 "" H 7350 2800 60  0001 C CNN
+F 3 "" H 7350 2800 60  0001 C CNN
+	1    7350 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P107
+U 1 1 5176E748
+P 4350 2100
+F 0 "P107" V 4300 2100 40  0000 C CNN
+F 1 "MOT_IN" V 4400 2100 40  0000 C CNN
+F 2 "w_conn_screw:mstba_2,5%2f2-g-5,08" H 4350 2100 60  0001 C CNN
+F 3 "" H 4350 2100 60  0001 C CNN
+	1    4350 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_2 P105
+U 1 1 50FC30EF
+P 10750 6050
+F 0 "P105" V 10700 6050 40  0000 C CNN
+F 1 "12V-AUX" V 10800 6050 40  0000 C CNN
+F 2 "rmc:CONN_KK_2.54_2W" H 10750 6050 60  0001 C CNN
+F 3 "" H 10750 6050 60  0001 C CNN
+	1    10750 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG024
+U 1 1 50FC2F79
+P 6600 1150
+F 0 "#FLG024" H 6600 1245 30  0001 C CNN
+F 1 "PWR_FLAG" H 6600 1330 30  0000 C CNN
+F 2 "" H 6600 1150 60  0001 C CNN
+F 3 "" H 6600 1150 60  0001 C CNN
+	1    6600 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG025
+U 1 1 50FC2F70
+P 7550 3000
+F 0 "#FLG025" H 7550 3095 30  0001 C CNN
+F 1 "PWR_FLAG" H 7550 3180 30  0000 C CNN
+F 2 "" H 7550 3000 60  0001 C CNN
+F 3 "" H 7550 3000 60  0001 C CNN
+	1    7550 3000
+	1    0    0    -1  
+$EndComp
+Text Notes 5650 750  0    100  ~ 20
+Power
+$Comp
+L C C102
+U 1 1 50FC27BF
+P 7100 3300
+AR Path="/50FC27BF" Ref="C102"  Part="1" 
+AR Path="/5239FE5C/50FC27BF" Ref="C102"  Part="1" 
+F 0 "C102" H 7150 3400 50  0000 L CNN
+F 1 "100n 35V" H 7150 3200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7100 3300 60  0001 C CNN
+F 3 "" H 7100 3300 60  0001 C CNN
+	1    7100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C101
+U 1 1 50FC27BA
+P 6550 3300
+AR Path="/50FC27BA" Ref="C101"  Part="1" 
+AR Path="/5239FE5C/50FC27BA" Ref="C101"  Part="1" 
+F 0 "C101" H 6600 3400 50  0000 L CNN
+F 1 "100u 35V" H 6600 3200 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_6.3x7.7" H 6550 3300 60  0001 C CNN
+F 3 "" H 6550 3300 60  0001 C CNN
+	1    6550 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE D103
+U 1 1 50FC273D
+P 3200 5500
+F 0 "D103" H 3200 5600 40  0000 C CNN
+F 1 "ES1F" H 3200 5400 40  0000 C CNN
+F 2 "rmc:DO-214AC" H 3200 5500 60  0001 C CNN
+F 3 "" H 3200 5500 60  0001 C CNN
+	1    3200 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L FUSE F102
+U 1 1 50FC26C8
+P 5450 3000
+F 0 "F102" H 5350 2900 40  0000 C CNN
+F 1 "FUSE 10A" H 5400 3100 40  0000 C CNN
+F 2 "rmc:FUSE-MINI-AUTO" H 5450 3000 60  0001 C CNN
+F 3 "" H 5450 3000 60  0001 C CNN
+	1    5450 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L FUSE F101
+U 1 1 50FC26C0
+P 5450 1150
+F 0 "F101" H 5350 1050 40  0000 C CNN
+F 1 "FUSE 15A" H 5400 1300 40  0000 C CNN
+F 2 "rmc:FUSE-MINI-AUTO" H 5450 1150 60  0001 C CNN
+F 3 "" H 5450 1150 60  0001 C CNN
+	1    5450 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM7812 U3
+U 1 1 523E1258
+P 2000 4750
+F 0 "U3" H 2150 4554 60  0000 C CNN
+F 1 "LM7812" H 2000 4950 60  0000 C CNN
+F 2 "discret:LM78XXV" H 2000 4750 60  0001 C CNN
+F 3 "~" H 2000 4750 60  0000 C CNN
+	1    2000 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +V_POWER #PWR026
+U 1 1 523F90FD
+P 800 4500
+F 0 "#PWR026" H 800 4470 30  0001 C CNN
+F 1 "+V_POWER" H 800 4600 30  0000 C CNN
+F 2 "" H 800 4500 60  0001 C CNN
+F 3 "" H 800 4500 60  0001 C CNN
+	1    800  4500
+	1    0    0    -1  
+$EndComp
+Text Notes 4650 5350 0    50   ~ 0
+JP1: Supply 12V to Arduino in standalone operation\nRemove if Arduino is powered by USB or other supply
+$Comp
+L C C207
+U 1 1 523F9247
+P 2500 5050
+AR Path="/523F9247" Ref="C207"  Part="1" 
+AR Path="/5239FE5C/523F9247" Ref="C207"  Part="1" 
+F 0 "C207" H 2550 5150 50  0000 L CNN
+F 1 "100n 16V" H 2550 4950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2500 5050 60  0001 C CNN
+F 3 "" H 2500 5050 60  0001 C CNN
+	1    2500 5050
+	1    0    0    -1  
+$EndComp
+Text Label 3450 5500 0    40   ~ 0
+LP_1
+Text Label 2450 4700 0    40   ~ 0
+LP_2
+$Comp
+L +12P #PWR027
+U 1 1 524B544A
+P 10050 5850
+F 0 "#PWR027" H 10050 5700 50  0001 C CNN
+F 1 "+12P" H 10050 5990 50  0000 C CNN
+F 2 "" H 10050 5850 50  0000 C CNN
+F 3 "" H 10050 5850 50  0000 C CNN
+	1    10050 5850
+	1    0    0    -1  
+$EndComp
+Text Notes 9300 2500 0    60   ~ 0
+Note: use thick traces for all\nhigh power connections
+Text Notes 1850 3375 0    60   ~ 0
+12V or 24V input \n(ensure to set JP102 correctly!)
+Text GLabel 3375 6775 1    50   Input ~ 0
+DUE_5V
+$Comp
+L +5V #PWR028
+U 1 1 52C43373
+P 6600 7150
+F 0 "#PWR028" H 6600 7000 50  0001 C CNN
+F 1 "+5V" H 6600 7290 50  0000 C CNN
+F 2 "" H 6600 7150 50  0000 C CNN
+F 3 "" H 6600 7150 50  0000 C CNN
+	1    6600 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_3 P219
+U 1 1 52C45876
+P 2425 7450
+F 0 "P219" V 2375 7450 40  0000 C CNN
+F 1 "EXT_5V" V 2475 7450 40  0000 C CNN
+F 2 "rmc:CONN_KK_2.54_3W" H 2425 7450 60  0001 C CNN
+F 3 "" H 2425 7450 60  0001 C CNN
+	1    2425 7450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR031
+U 1 1 52C458DB
+P 2975 7650
+AR Path="/52C458DB" Ref="#PWR031"  Part="1" 
+AR Path="/5239FE5C/52C458DB" Ref="#PWR029"  Part="1" 
+F 0 "#PWR029" H 2975 7650 30  0001 C CNN
+F 1 "GND" H 2975 7580 30  0001 C CNN
+F 2 "" H 2975 7650 60  0001 C CNN
+F 3 "" H 2975 7650 60  0001 C CNN
+	1    2975 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMP_MINI JP201
+U 1 1 52C45B66
+P 3700 6900
+F 0 "JP201" H 3700 6825 60  0000 C CNN
+F 1 "5V_SEL" H 3675 6725 60  0000 C CNN
+F 2 "w_pin_strip:pin_strip_2" H 3700 6900 60  0001 C CNN
+F 3 "~" H 3700 6900 60  0000 C CNN
+	1    3700 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG030
+U 1 1 52C464E7
+P 2950 6825
+F 0 "#FLG030" H 2950 6920 30  0001 C CNN
+F 1 "PWR_FLAG" H 2950 7005 30  0000 C CNN
+F 2 "" H 2950 6825 60  0001 C CNN
+F 3 "" H 2950 6825 60  0001 C CNN
+	1    2950 6825
+	1    0    0    -1  
+$EndComp
+Text Notes 1525 7525 0    60   ~ 0
+5V: External or \nStandby
+$Comp
+L DIODE_DUAL_ANODE D102
+U 1 1 52D040BC
+P 6100 3350
+F 0 "D102" H 6100 3050 60  0000 C CNN
+F 1 "SS10Pxx" V 6500 3200 60  0000 C CNN
+F 2 "rmc:TO277A_RMC" H 6100 3350 60  0001 C CNN
+F 3 "" H 6100 3350 60  0000 C CNN
+F 4 "If = 10 A" V 6600 3300 60  0000 C CNN "Note"
+	1    6100 3350
+	0    1    1    0   
+$EndComp
+Text Notes 5650 4000 0    60   ~ 0
+or equiv V10P
+$Comp
+L LM7812 U4
+U 1 1 571CC545
+P 7800 5000
+F 0 "U4" H 7950 4804 60  0000 C CNN
+F 1 "L7805CV-DG" H 7800 5200 60  0000 C CNN
+F 2 "discret:LM78XXV" H 7800 5000 60  0001 C CNN
+F 3 "~" H 7800 5000 60  0000 C CNN
+	1    7800 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 571CC57E
+P 7000 5250
+AR Path="/571CC57E" Ref="C3"  Part="1" 
+AR Path="/5239FE5C/571CC57E" Ref="C3"  Part="1" 
+F 0 "C3" H 7050 5350 50  0000 L CNN
+F 1 "100n 16V" H 7050 5150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7000 5250 60  0001 C CNN
+F 3 "" H 7000 5250 60  0001 C CNN
+	1    7000 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 571CC584
+P 8500 5250
+AR Path="/571CC584" Ref="C4"  Part="1" 
+AR Path="/5239FE5C/571CC584" Ref="C4"  Part="1" 
+F 0 "C4" H 8550 5350 50  0000 L CNN
+F 1 "100n" H 8550 5150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 8500 5250 60  0001 C CNN
+F 3 "" H 8500 5250 60  0001 C CNN
+	1    8500 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR031
+U 1 1 571CC597
+P 8750 4850
+F 0 "#PWR031" H 8750 4700 50  0001 C CNN
+F 1 "+5V" H 8750 4990 50  0000 C CNN
+F 2 "" H 8750 4850 50  0000 C CNN
+F 3 "" H 8750 4850 50  0000 C CNN
+	1    8750 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR035
+U 1 1 571CC7AA
+P 7800 5700
+AR Path="/571CC7AA" Ref="#PWR035"  Part="1" 
+AR Path="/5239FE5C/571CC7AA" Ref="#PWR032"  Part="1" 
+F 0 "#PWR032" H 7800 5700 30  0001 C CNN
+F 1 "GND" H 7800 5630 30  0001 C CNN
+F 2 "" H 7800 5700 60  0001 C CNN
+F 3 "" H 7800 5700 60  0001 C CNN
+	1    7800 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L NET-TIE J1
+U 1 1 5723A8F0
+P 8175 3650
+F 0 "J1" H 8120 3740 60  0000 C CNN
+F 1 "NET-TIE" H 8130 3555 20  0000 C CNN
+F 2 "rmc:TIE-1MM" H 8085 3385 60  0001 C CNN
+F 3 "" H 8175 3650 60  0000 C CNN
+F 4 "Copper jumper block" H 8195 3270 60  0001 C CNN "Description"
+	1    8175 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR033
+U 1 1 5723DF2D
+P 10050 6300
+F 0 "#PWR033" H 10050 6300 30  0001 C CNN
+F 1 "GND" H 10050 6230 30  0001 C CNN
+F 2 "" H 10050 6300 60  0001 C CNN
+F 3 "" H 10050 6300 60  0001 C CNN
+	1    10050 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR034
+U 1 1 5723E3AA
+P 2000 5500
+F 0 "#PWR034" H 2000 5300 50  0001 C CNN
+F 1 "GNDPWR" H 2000 5370 50  0000 C CNN
+F 2 "" H 2000 5450 50  0000 C CNN
+F 3 "" H 2000 5450 50  0000 C CNN
+	1    2000 5500
+	1    0    0    -1  
+$EndComp
+Connection ~ 2850 4950
+Connection ~ 3950 4950
+Wire Wire Line
+	2850 4950 7400 4950
+Wire Wire Line
+	2400 4700 2700 4700
+Wire Wire Line
+	2000 5000 2000 5500
+Wire Wire Line
+	10050 5850 10050 5950
+Wire Wire Line
+	4050 5500 4925 5500
+Wire Notes Line
+	8550 2500 2500 2500
+Connection ~ 5850 7050
+Wire Wire Line
+	5200 7050 5850 7050
+Wire Wire Line
+	5100 6900 5100 6725
+Wire Wire Line
+	6350 7350 6350 7150
+Connection ~ 7100 3650
+Wire Wire Line
+	7600 3650 7600 3750
+Wire Wire Line
+	4850 3650 7975 3650
+Wire Wire Line
+	4700 2200 7900 2200
+Wire Wire Line
+	8500 3625 8500 3750
+Wire Wire Line
+	7900 2200 7900 2300
+Wire Wire Line
+	7100 1350 7100 2200
+Wire Wire Line
+	4700 1150 5200 1150
+Connection ~ 7550 3000
+Wire Wire Line
+	5700 3000 7550 3000
+Connection ~ 5500 7050
+Wire Notes Line
+	4200 3100 3400 3100
+Wire Notes Line
+	4200 2100 3350 2100
+Wire Wire Line
+	5500 7050 5500 6900
+Wire Wire Line
+	10050 5950 10400 5950
+Wire Wire Line
+	5200 2000 4700 2000
+Wire Wire Line
+	6450 1800 6450 2000
+Wire Wire Line
+	6050 3000 6050 3050
+Wire Wire Line
+	7100 3650 7100 3450
+Connection ~ 6550 3000
+Wire Wire Line
+	7100 3000 7100 3150
+Connection ~ 6050 3000
+Wire Wire Line
+	4850 3650 4850 3200
+Connection ~ 6400 1150
+Wire Wire Line
+	6400 950  6400 1150
+Wire Wire Line
+	5700 1150 6600 1150
+Wire Wire Line
+	5200 3000 4700 3000
+Wire Wire Line
+	4850 3200 4700 3200
+Connection ~ 6050 3650
+Wire Wire Line
+	10400 6150 10050 6150
+Wire Wire Line
+	10050 6150 10050 6300
+Wire Wire Line
+	6050 3550 6050 3650
+Wire Wire Line
+	6550 3000 6550 3150
+Wire Wire Line
+	6550 3650 6550 3450
+Connection ~ 6550 3650
+Connection ~ 7100 3000
+Wire Wire Line
+	7350 2800 7350 3000
+Connection ~ 6450 2000
+Wire Wire Line
+	5700 2000 6600 2000
+Wire Notes Line
+	3350 1250 4200 1250
+Wire Wire Line
+	3800 5500 3400 5500
+Connection ~ 7350 3000
+Wire Wire Line
+	4700 1350 7100 1350
+Connection ~ 7100 2200
+Wire Wire Line
+	5100 7350 5100 7200
+Wire Wire Line
+	2775 7350 6600 7350
+Wire Wire Line
+	5850 7050 5850 6950
+Wire Notes Line
+	8550 1600 2500 1600
+Wire Wire Line
+	4400 5400 4400 5500
+Connection ~ 4400 5500
+Wire Wire Line
+	800  4700 1600 4700
+Wire Wire Line
+	2850 5500 3000 5500
+Wire Wire Line
+	3000 4700 3200 4700
+Wire Wire Line
+	3200 4700 3200 4250
+Wire Wire Line
+	3200 4250 1500 4250
+Wire Wire Line
+	1500 4250 1500 4700
+Connection ~ 1500 4700
+Wire Wire Line
+	3950 4800 3950 4950
+Wire Wire Line
+	4200 4950 4200 4850
+Wire Wire Line
+	800  4500 800  4700
+Wire Wire Line
+	2500 5250 2000 5250
+Connection ~ 2000 5250
+Wire Wire Line
+	2500 4900 2500 4700
+Connection ~ 2500 4700
+Wire Notes Line
+	8900 3850 9250 3850
+Wire Notes Line
+	9250 3850 9250 900 
+Wire Notes Line
+	9250 900  8950 900 
+Wire Notes Line
+	9250 2600 10700 2600
+Wire Notes Line
+	10700 2600 10700 2250
+Wire Notes Line
+	10700 2250 9250 2250
+Wire Notes Line
+	4600 5150 4600 5400
+Wire Notes Line
+	4600 5150 6800 5150
+Wire Notes Line
+	6800 5150 6800 5400
+Wire Notes Line
+	4850 7150 4850 7500
+Wire Notes Line
+	4300 7500 5550 7500
+Wire Notes Line
+	4300 7500 4300 7800
+Wire Notes Line
+	5550 7500 5550 7800
+Wire Notes Line
+	1900 1150 3350 1150
+Wire Notes Line
+	3350 1150 3350 1350
+Wire Notes Line
+	3350 1350 1900 1350
+Wire Notes Line
+	2250 2000 3350 2000
+Wire Notes Line
+	3350 2000 3350 2200
+Wire Notes Line
+	3350 2200 2250 2200
+Wire Notes Line
+	3400 3500 3400 2800
+Wire Notes Line
+	1700 3500 3400 3500
+Wire Wire Line
+	2850 4800 2850 5500
+Connection ~ 5100 7350
+Wire Wire Line
+	6600 7350 6600 7150
+Connection ~ 6350 7350
+Connection ~ 6600 7350
+Wire Wire Line
+	2975 7550 2975 7650
+Wire Wire Line
+	2975 7550 2775 7550
+Wire Wire Line
+	5950 3500 5950 3550
+Wire Wire Line
+	5950 3550 6150 3550
+Wire Wire Line
+	6150 3550 6150 3500
+Connection ~ 6050 3550
+Wire Wire Line
+	7000 4950 7000 5100
+Connection ~ 7000 4950
+Wire Wire Line
+	8200 4950 8750 4950
+Wire Wire Line
+	8750 4950 8750 4850
+Wire Wire Line
+	8500 5100 8500 4950
+Connection ~ 8500 4950
+Wire Wire Line
+	7800 5250 7800 5700
+Wire Wire Line
+	7000 5400 7000 5550
+Wire Wire Line
+	7000 5550 8500 5550
+Connection ~ 7800 5550
+Wire Wire Line
+	8500 5550 8500 5400
+Wire Wire Line
+	2500 5250 2500 5200
+Wire Notes Line
+	1350 3550 1350 4000
+Wire Notes Line
+	1350 4000 3200 4000
+Wire Notes Line
+	3200 4000 3200 3550
+Wire Notes Line
+	2850 4300 2850 4150
+Wire Notes Line
+	2850 4150 2300 4150
+Wire Notes Line
+	2300 4150 2300 4000
+Wire Notes Line
+	3200 3550 1350 3550
+Wire Notes Line
+	1900 1350 1900 1150
+Wire Notes Line
+	2250 2200 2250 2000
+Wire Notes Line
+	1700 3500 1700 2800
+Wire Notes Line
+	1700 2800 3400 2800
+Wire Notes Line
+	6800 5400 4600 5400
+Connection ~ 4200 4950
+Wire Wire Line
+	8500 3650 8275 3650
+Connection ~ 7600 3650
+Connection ~ 8500 3650
+Wire Notes Line
+	3275 5925 5250 5925
+Wire Notes Line
+	5250 6450 3275 6450
+Wire Wire Line
+	4925 5500 4925 5525
+Text Notes 3850 6225 0    60   Italic 0
+Arduino base board
+Wire Wire Line
+	3375 6775 3375 6900
+Wire Wire Line
+	2950 6900 3550 6900
+Wire Wire Line
+	3800 6900 3925 6900
+Wire Wire Line
+	3925 6900 3925 7350
+Connection ~ 3925 7350
+Wire Wire Line
+	2950 6900 2950 6825
+Connection ~ 3375 6900
+Wire Notes Line
+	3275 6450 3275 5925
+Wire Notes Line
+	5250 6450 5250 6400
+Wire Notes Line
+	5250 6400 5275 6375
+Wire Notes Line
+	5275 6375 5275 6125
+Wire Notes Line
+	5275 6125 5250 6100
+Wire Notes Line
+	5250 6100 5250 5925
+Wire Notes Line
+	4100 5675 4650 5675
+Wire Notes Line
+	4650 5675 4650 5400
+Wire Wire Line
+	3025 7450 2775 7450
+Wire Notes Line
+	5350 6100 5350 6550
+Wire Notes Line
+	5350 6550 7000 6550
+Text Notes 5375 6525 0    50   ~ 0
+Note: On R3 compatible Arduinos, IOREF \nwill supply 3.3V (Due), or 5V (Mega).\n\nIf IOREF is not provided (non-R3) then it \nmust be a 5V Arduino so set VLOG to 5V.
+Wire Notes Line
+	5350 6100 7000 6100
+Wire Notes Line
+	7000 6100 7000 6550
+Wire Notes Line
+	5550 7800 4300 7800
+Wire Notes Line
+	6150 6550 6150 6650
+Wire Notes Line
+	6150 6650 5200 6650
+$EndSCHEMATC

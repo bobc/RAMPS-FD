@@ -1,0 +1,636 @@
+EESchema Schematic File Version 2
+LIBS:RAMPS-FD-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:RMC
+LIBS:RAMPS-FD-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 10
+Title "RAMPS-FD (RAMPS for Arduino Due)"
+Date "2016-07-17"
+Rev "v2.2"
+Comp ""
+Comment1 "Derived from RAMPS 1.4 reprap.org/wiki/RAMPS1.4"
+Comment2 "GPL v3"
+Comment3 "Bob Cousins 2016"
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	2850 725  2850 775 
+Wire Wire Line
+	4600 6675 5350 6675
+Wire Wire Line
+	4600 6475 5350 6475
+Connection ~ 2800 6575
+Connection ~ 4850 6075
+Connection ~ 4900 7525
+Wire Wire Line
+	4900 6975 4900 7675
+Connection ~ 4850 3725
+Wire Wire Line
+	4900 4625 4900 5225
+Connection ~ 2850 4225
+Wire Wire Line
+	2850 4725 2850 4225
+Connection ~ 4800 2725
+Wire Wire Line
+	5400 1975 5400 2375
+Wire Wire Line
+	5400 2375 4500 2375
+Wire Wire Line
+	4850 3525 4850 3725
+Wire Wire Line
+	4600 3725 5500 3725
+Wire Wire Line
+	4900 4225 4600 4225
+Wire Wire Line
+	4900 4025 4600 4025
+Wire Wire Line
+	4600 4725 5500 4725
+Wire Wire Line
+	4900 4625 4600 4625
+Wire Wire Line
+	4600 4125 4900 4125
+Wire Wire Line
+	4600 4325 4900 4325
+Wire Wire Line
+	2900 2275 3200 2275
+Connection ~ 1800 1975
+Wire Wire Line
+	1800 775  1800 2075
+Wire Wire Line
+	1800 2075 1850 2075
+Wire Wire Line
+	1800 1975 1850 1975
+Wire Wire Line
+	3200 1775 3150 1775
+Wire Wire Line
+	3200 2075 2650 2075
+Wire Wire Line
+	2650 1875 3200 1875
+Wire Wire Line
+	4500 1975 4800 1975
+Wire Wire Line
+	4500 1775 4800 1775
+Wire Wire Line
+	4500 2275 4800 2275
+Wire Wire Line
+	4800 1675 4500 1675
+Wire Wire Line
+	4800 1875 4500 1875
+Wire Wire Line
+	4750 1175 4750 1375
+Connection ~ 2850 775 
+Connection ~ 2850 1475
+Wire Wire Line
+	2650 1975 3200 1975
+Wire Wire Line
+	3150 1675 3200 1675
+Wire Wire Line
+	1850 1875 1800 1875
+Connection ~ 1800 1875
+Wire Wire Line
+	3200 2375 3100 2375
+Wire Wire Line
+	3100 2375 3100 2275
+Connection ~ 3100 2275
+Wire Wire Line
+	3200 1375 3100 1375
+Wire Wire Line
+	3100 1375 3100 775 
+Wire Wire Line
+	3100 775  1800 775 
+Wire Wire Line
+	3200 3125 3200 3725
+Wire Wire Line
+	3200 3725 3300 3725
+Connection ~ 3200 4625
+Wire Wire Line
+	3200 4625 3200 4725
+Wire Wire Line
+	3200 4725 3300 4725
+Connection ~ 1800 4225
+Wire Wire Line
+	1800 4225 1850 4225
+Wire Wire Line
+	3250 4025 3300 4025
+Wire Wire Line
+	2650 4325 3300 4325
+Connection ~ 2950 3825
+Connection ~ 2950 3125
+Wire Wire Line
+	2950 3075 2950 3125
+Wire Wire Line
+	1800 3125 3200 3125
+Wire Wire Line
+	2750 3825 3300 3825
+Wire Wire Line
+	2650 4225 3300 4225
+Wire Wire Line
+	3300 4425 2650 4425
+Wire Wire Line
+	3300 4125 3250 4125
+Wire Wire Line
+	1800 4325 1850 4325
+Wire Wire Line
+	1800 4425 1850 4425
+Wire Wire Line
+	1800 3125 1800 4425
+Connection ~ 1800 4325
+Wire Wire Line
+	3000 4625 3300 4625
+Wire Wire Line
+	4900 6975 4600 6975
+Wire Wire Line
+	4600 7075 6100 7075
+Wire Wire Line
+	4600 6075 6100 6075
+Wire Wire Line
+	4850 5875 4850 6075
+Wire Wire Line
+	3000 6975 3300 6975
+Connection ~ 1800 6675
+Wire Wire Line
+	1800 5475 1800 6775
+Wire Wire Line
+	1800 6775 1850 6775
+Wire Wire Line
+	1800 6675 1850 6675
+Wire Wire Line
+	3300 6475 3250 6475
+Wire Wire Line
+	3300 6775 2650 6775
+Wire Wire Line
+	2650 6575 3300 6575
+Wire Wire Line
+	2750 6175 3300 6175
+Wire Wire Line
+	2950 5425 2950 5475
+Connection ~ 2950 5475
+Connection ~ 2950 6175
+Wire Wire Line
+	2650 6675 3300 6675
+Wire Wire Line
+	3250 6375 3300 6375
+Wire Wire Line
+	1850 6575 1800 6575
+Connection ~ 1800 6575
+Wire Wire Line
+	3300 7075 3200 7075
+Wire Wire Line
+	3200 7075 3200 6975
+Connection ~ 3200 6975
+Wire Wire Line
+	3300 6075 3200 6075
+Wire Wire Line
+	3200 6075 3200 5475
+Wire Wire Line
+	3200 5475 1800 5475
+Wire Wire Line
+	5400 1375 5400 1675
+Wire Wire Line
+	4500 1375 5400 1375
+Connection ~ 4750 1375
+Wire Wire Line
+	5500 3725 5500 4025
+Wire Wire Line
+	5500 4725 5500 4325
+Wire Wire Line
+	6100 7075 6100 6675
+Wire Wire Line
+	6100 6075 6100 6375
+Wire Wire Line
+	2750 2575 2750 2725
+Wire Wire Line
+	2750 2725 4800 2725
+Wire Wire Line
+	4800 2275 4800 2775
+Wire Wire Line
+	4900 5175 2850 5175
+Wire Wire Line
+	2850 5175 2850 5025
+Connection ~ 4900 5175
+Wire Wire Line
+	2750 2275 2750 1875
+Connection ~ 2750 1875
+Wire Wire Line
+	2800 7375 2800 7525
+Wire Wire Line
+	2800 7075 2800 6575
+Wire Wire Line
+	2800 7525 4900 7525
+Wire Wire Line
+	4600 6375 5350 6375
+Wire Wire Line
+	4600 6575 5350 6575
+Wire Wire Line
+	2450 1475 3200 1475
+Text GLabel 2750 6175 0    60   Input ~ 0
+/Z_EN_BUF
+Text GLabel 2750 3825 0    60   Input ~ 0
+/Y_EN_BUF
+Text GLabel 2450 1475 0    60   Input ~ 0
+/X_EN_BUF
+Text Label 4650 6675 0    40   ~ 0
+Z-1B
+Text Label 4650 6575 0    40   ~ 0
+Z-1A
+Text Label 4650 6475 0    40   ~ 0
+Z-2A
+Text Label 4650 6375 0    40   ~ 0
+Z-2B
+Text Label 4650 4325 0    40   ~ 0
+Y-1B
+Text Label 4650 4225 0    40   ~ 0
+Y-1A
+Text Label 4650 4125 0    40   ~ 0
+Y-2A
+Text Label 4650 4025 0    40   ~ 0
+Y-2B
+Text Label 4550 1975 0    40   ~ 0
+X-1B
+Text Label 4550 1875 0    40   ~ 0
+X-1A
+Text Label 4550 1775 0    40   ~ 0
+X-2A
+Text Label 4550 1675 0    40   ~ 0
+X-2B
+Text GLabel 5700 7075 2    50   UnSpc ~ 0
+MOT_GND
+Text GLabel 5050 4725 2    50   UnSpc ~ 0
+MOT_GND
+Text GLabel 4950 2375 2    50   UnSpc ~ 0
+MOT_GND
+$Comp
+L +V_LOGIC #PWR035
+U 1 1 517866AA
+P 3000 6975
+F 0 "#PWR035" H 3000 6945 30  0001 C CNN
+F 1 "+V_LOGIC" H 3000 7075 30  0000 C CNN
+F 2 "" H 3000 6975 60  0001 C CNN
+F 3 "" H 3000 6975 60  0001 C CNN
+	1    3000 6975
+	1    0    0    -1  
+$EndComp
+$Comp
+L +V_LOGIC #PWR036
+U 1 1 517866A4
+P 3000 4625
+F 0 "#PWR036" H 3000 4595 30  0001 C CNN
+F 1 "+V_LOGIC" H 3000 4725 30  0000 C CNN
+F 2 "" H 3000 4625 60  0001 C CNN
+F 3 "" H 3000 4625 60  0001 C CNN
+	1    3000 4625
+	1    0    0    -1  
+$EndComp
+$Comp
+L +V_LOGIC #PWR037
+U 1 1 517866A0
+P 2900 2275
+F 0 "#PWR037" H 2900 2245 30  0001 C CNN
+F 1 "+V_LOGIC" H 2900 2375 30  0000 C CNN
+F 2 "" H 2900 2275 60  0001 C CNN
+F 3 "" H 2900 2275 60  0001 C CNN
+	1    2900 2275
+	1    0    0    -1  
+$EndComp
+$Comp
+L +V_LOGIC #PWR038
+U 1 1 51786671
+P 2950 5425
+F 0 "#PWR038" H 2950 5395 30  0001 C CNN
+F 1 "+V_LOGIC" H 2950 5525 30  0000 C CNN
+F 2 "" H 2950 5425 60  0001 C CNN
+F 3 "" H 2950 5425 60  0001 C CNN
+	1    2950 5425
+	1    0    0    -1  
+$EndComp
+$Comp
+L +V_LOGIC #PWR039
+U 1 1 51786662
+P 2950 3075
+F 0 "#PWR039" H 2950 3045 30  0001 C CNN
+F 1 "+V_LOGIC" H 2950 3175 30  0000 C CNN
+F 2 "" H 2950 3075 60  0001 C CNN
+F 3 "" H 2950 3075 60  0001 C CNN
+	1    2950 3075
+	1    0    0    -1  
+$EndComp
+$Comp
+L +V_LOGIC #PWR040
+U 1 1 5178664A
+P 2850 725
+F 0 "#PWR040" H 2850 695 30  0001 C CNN
+F 1 "+V_LOGIC" H 2850 825 30  0000 C CNN
+F 2 "" H 2850 725 60  0001 C CNN
+F 3 "" H 2850 725 60  0001 C CNN
+	1    2850 725 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +V_MOTOR #PWR041
+U 1 1 5176ECF3
+P 4850 5875
+F 0 "#PWR041" H 4850 5845 30  0001 C CNN
+F 1 "+V_MOTOR" H 4850 5975 30  0000 C CNN
+F 2 "" H 4850 5875 60  0001 C CNN
+F 3 "" H 4850 5875 60  0001 C CNN
+	1    4850 5875
+	1    0    0    -1  
+$EndComp
+$Comp
+L +V_MOTOR #PWR042
+U 1 1 5176ECF1
+P 4850 3525
+F 0 "#PWR042" H 4850 3495 30  0001 C CNN
+F 1 "+V_MOTOR" H 4850 3625 30  0000 C CNN
+F 2 "" H 4850 3525 60  0001 C CNN
+F 3 "" H 4850 3525 60  0001 C CNN
+	1    4850 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L +V_MOTOR #PWR043
+U 1 1 5176ECE5
+P 4750 1175
+F 0 "#PWR043" H 4750 1145 30  0001 C CNN
+F 1 "+V_MOTOR" H 4750 1275 30  0000 C CNN
+F 2 "" H 4750 1175 60  0001 C CNN
+F 3 "" H 4750 1175 60  0001 C CNN
+	1    4750 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R201
+U 1 1 50FC333E
+P 2800 7225
+AR Path="/50FC333E" Ref="R201"  Part="1" 
+AR Path="/50FC2853/50FC333E" Ref="R201"  Part="1" 
+F 0 "R201" V 2880 7225 50  0000 C CNN
+F 1 "100k" V 2800 7225 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" H 2800 7225 60  0001 C CNN
+F 3 "" H 2800 7225 60  0001 C CNN
+	1    2800 7225
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R203
+U 1 1 50FC3316
+P 2850 4875
+AR Path="/50FC3316" Ref="R203"  Part="1" 
+AR Path="/50FC2853/50FC3316" Ref="R203"  Part="1" 
+F 0 "R203" V 2930 4875 50  0000 C CNN
+F 1 "100k" V 2850 4875 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" H 2850 4875 60  0001 C CNN
+F 3 "" H 2850 4875 60  0001 C CNN
+	1    2850 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR045
+U 1 1 50FC3315
+P 4900 5225
+AR Path="/50FC3315" Ref="#PWR045"  Part="1" 
+AR Path="/50FC2853/50FC3315" Ref="#PWR044"  Part="1" 
+F 0 "#PWR044" H 4900 5225 30  0001 C CNN
+F 1 "GND" H 4900 5155 30  0001 C CNN
+F 2 "" H 4900 5225 60  0001 C CNN
+F 3 "" H 4900 5225 60  0001 C CNN
+	1    4900 5225
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR046
+U 1 1 50FC32E4
+P 4800 2775
+AR Path="/50FC32E4" Ref="#PWR046"  Part="1" 
+AR Path="/50FC2853/50FC32E4" Ref="#PWR045"  Part="1" 
+F 0 "#PWR045" H 4800 2775 30  0001 C CNN
+F 1 "GND" H 4800 2705 30  0001 C CNN
+F 2 "" H 4800 2775 60  0001 C CNN
+F 3 "" H 4800 2775 60  0001 C CNN
+	1    4800 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R202
+U 1 1 50FC32C0
+P 2750 2425
+AR Path="/50FC32C0" Ref="R202"  Part="1" 
+AR Path="/50FC2853/50FC32C0" Ref="R202"  Part="1" 
+F 0 "R202" V 2830 2425 50  0000 C CNN
+F 1 "100k" V 2750 2425 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" H 2750 2425 60  0001 C CNN
+F 3 "" H 2750 2425 60  0001 C CNN
+	1    2750 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C203
+U 1 1 50FC32B3
+P 6100 6525
+AR Path="/50FC32B3" Ref="C203"  Part="1" 
+AR Path="/50FC2853/50FC32B3" Ref="C203"  Part="1" 
+F 0 "C203" H 6150 6625 50  0000 L CNN
+F 1 "100u 35V" H 6150 6425 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_6.3x7.7" H 6100 6525 60  0001 C CNN
+F 3 "" H 6100 6525 60  0001 C CNN
+	1    6100 6525
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C202
+U 1 1 50FC32B0
+P 5500 4175
+AR Path="/50FC32B0" Ref="C202"  Part="1" 
+AR Path="/50FC2853/50FC32B0" Ref="C202"  Part="1" 
+F 0 "C202" H 5550 4275 50  0000 L CNN
+F 1 "100u 35V" H 5550 4075 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_6.3x7.7" H 5500 4175 60  0001 C CNN
+F 3 "" H 5500 4175 60  0001 C CNN
+	1    5500 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C201
+U 1 1 50FC3200
+P 5400 1825
+AR Path="/50FC3200" Ref="C201"  Part="1" 
+AR Path="/50FC2853/50FC3200" Ref="C201"  Part="1" 
+F 0 "C201" H 5450 1925 50  0000 L CNN
+F 1 "100u 35V" H 5450 1725 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_6.3x7.7" H 5400 1825 60  0001 C CNN
+F 3 "" H 5400 1825 60  0001 C CNN
+	1    5400 1825
+	1    0    0    -1  
+$EndComp
+Text GLabel 3250 6475 0    50   Input ~ 0
+Z_DIR
+Text GLabel 3250 6375 0    50   Input ~ 0
+Z_STEP
+$Comp
+L CONN_3X2 P202
+U 1 1 50FC2B85
+P 2250 6725
+F 0 "P202" H 2250 6975 50  0000 C CNN
+F 1 "3 2 1" V 2250 6775 40  0000 C CNN
+F 2 "pin_array:pin_array_3x2" H 2250 6725 60  0001 C CNN
+F 3 "" H 2250 6725 60  0001 C CNN
+	1    2250 6725
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_4 P206
+U 1 1 50FC2B7B
+P 5150 6525
+F 0 "P206" V 5100 6525 50  0000 C CNN
+F 1 "Z1" V 5200 6525 50  0000 C CNN
+F 2 "rmc:CONN_KK_2.54_4W" H 5150 6525 60  0001 C CNN
+F 3 "" H 5150 6525 60  0001 C CNN
+	1    5150 6525
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR047
+U 1 1 50FC2B7A
+P 4900 7675
+AR Path="/50FC2B7A" Ref="#PWR047"  Part="1" 
+AR Path="/50FC2853/50FC2B7A" Ref="#PWR046"  Part="1" 
+F 0 "#PWR046" H 4900 7675 30  0001 C CNN
+F 1 "GND" H 4900 7605 30  0001 C CNN
+F 2 "" H 4900 7675 60  0001 C CNN
+F 3 "" H 4900 7675 60  0001 C CNN
+	1    4900 7675
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_3X2 P201
+U 1 1 50FC2B31
+P 2250 4375
+F 0 "P201" H 2250 4625 50  0000 C CNN
+F 1 "3 2 1" V 2250 4425 40  0000 C CNN
+F 2 "pin_array:pin_array_3x2" H 2250 4375 60  0001 C CNN
+F 3 "" H 2250 4375 60  0001 C CNN
+	1    2250 4375
+	1    0    0    -1  
+$EndComp
+Text GLabel 3250 4025 0    50   Input ~ 0
+Y_STEP
+Text GLabel 3250 4125 0    50   Input ~ 0
+Y_DIR
+$Comp
+L CONN_4 P205
+U 1 1 50FC2B09
+P 5250 4175
+F 0 "P205" V 5200 4175 50  0000 C CNN
+F 1 "Y" V 5300 4175 50  0000 C CNN
+F 2 "rmc:CONN_KK_2.54_4W" H 5250 4175 60  0001 C CNN
+F 3 "" H 5250 4175 60  0001 C CNN
+	1    5250 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_4 P204
+U 1 1 50FC2A06
+P 5150 1825
+F 0 "P204" V 5100 1825 50  0000 C CNN
+F 1 "X" V 5200 1825 50  0000 C CNN
+F 2 "rmc:CONN_KK_2.54_4W" H 5150 1825 60  0001 C CNN
+F 3 "" H 5150 1825 60  0001 C CNN
+	1    5150 1825
+	1    0    0    -1  
+$EndComp
+Text GLabel 3150 1775 0    50   Input ~ 0
+X_DIR
+Text GLabel 3150 1675 0    50   Input ~ 0
+X_STEP
+$Comp
+L CONN_3X2 P203
+U 1 1 50FC294D
+P 2250 2025
+F 0 "P203" H 2250 2275 50  0000 C CNN
+F 1 "3 2 1" V 2250 2075 40  0000 C CNN
+F 2 "pin_array:pin_array_3x2" H 2250 2025 60  0001 C CNN
+F 3 "" H 2250 2025 60  0001 C CNN
+	1    2250 2025
+	1    0    0    -1  
+$EndComp
+$Comp
+L POLOLU U203
+U 1 1 50FC2880
+P 3950 6575
+F 0 "U203" H 3650 7175 60  0000 C CNN
+F 1 "Z" H 3750 5925 60  0000 C CNN
+F 2 "rmc:POLOLU" H 3950 6575 60  0001 C CNN
+F 3 "" H 3950 6575 60  0001 C CNN
+	1    3950 6575
+	1    0    0    -1  
+$EndComp
+$Comp
+L POLOLU U202
+U 1 1 50FC287F
+P 3950 4225
+F 0 "U202" H 3650 4825 60  0000 C CNN
+F 1 "Y" H 3750 3575 60  0000 C CNN
+F 2 "rmc:POLOLU" H 3950 4225 60  0001 C CNN
+F 3 "" H 3950 4225 60  0001 C CNN
+	1    3950 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L POLOLU U201
+U 1 1 50FC2876
+P 3850 1875
+F 0 "U201" H 3550 2475 60  0000 C CNN
+F 1 "X" H 3650 1225 60  0000 C CNN
+F 2 "rmc:POLOLU" H 3850 1875 60  0001 C CNN
+F 3 "" H 3850 1875 60  0001 C CNN
+	1    3850 1875
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_4 P3
+U 1 1 571CE482
+P 5700 6525
+F 0 "P3" V 5650 6525 50  0000 C CNN
+F 1 "Z2" V 5750 6525 50  0000 C CNN
+F 2 "rmc:CONN_KK_2.54_4W" H 5700 6525 60  0001 C CNN
+F 3 "" H 5700 6525 60  0001 C CNN
+	1    5700 6525
+	1    0    0    -1  
+$EndComp
+Connection ~ 4800 6375
+Connection ~ 4800 6475
+Connection ~ 4800 6575
+Connection ~ 4800 6675
+$EndSCHEMATC
