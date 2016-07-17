@@ -1,11 +1,13 @@
-# RAMPS-NG
-A new RAMPS for Mega and Due.
+# RAMPS-FD
 
-THIS IS THE RELASE BRANCH.
+RAMPS for Due.
+
+THIS IS THE RELEASE BRANCH.
 
 DESIGNS WILL APPEAR HERE WHEN THEY ARE READY.
 
 Status
 -------
 
-Nothing is ready for release yet.
+Nothing is ready for release yet!
+
