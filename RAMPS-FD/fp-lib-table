@@ -7,4 +7,5 @@
   (lib (name w_pin_strip)(type Legacy)(uri "$(KIPRJMOD)\\footprints\\w_pin_strip.mod")(options "")(descr ""))
   (lib (name w_smd_diode)(type Legacy)(uri "$(KIPRJMOD)\\footprints\\w_smd_diode.mod")(options "")(descr ""))
   (lib (name rmc)(type KiCad)(uri "$(KIPRJMOD)\\footprints\\rmc.pretty")(options "")(descr ""))
+  (lib (name RMC_pcb_header)(type Legacy)(uri "$(KIPRJMOD)\\footprints\\RMC_pcb_header.mod")(options "")(descr ""))
 )

@@ -270,7 +270,7 @@ U 1 1 51B4E8E0
 P 3000 4400
 F 0 "P209" H 3000 4650 50  0000 C CNN
 F 1 "3 2 1" V 3000 4450 40  0000 C CNN
-F 2 "pin_array:pin_array_3x2" H 3000 4400 60  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 3000 4400 60  0001 C CNN
 F 3 "" H 3000 4400 60  0001 C CNN
 	1    3000 4400
 	1    0    0    -1  
@@ -337,7 +337,7 @@ U 1 1 51B4E8DB
 P 3000 2000
 F 0 "P208" H 3000 2250 50  0000 C CNN
 F 1 "3 2 1" V 3000 2050 40  0000 C CNN
-F 2 "pin_array:pin_array_3x2" H 3000 2000 60  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 3000 2000 60  0001 C CNN
 F 3 "" H 3000 2000 60  0001 C CNN
 	1    3000 2000
 	1    0    0    -1  
@@ -487,7 +487,7 @@ U 1 1 51B4E8CE
 P 2900 6850
 F 0 "P207" H 2900 7100 50  0000 C CNN
 F 1 "3 2 1" V 2900 6900 40  0000 C CNN
-F 2 "pin_array:pin_array_3x2" H 2900 6850 60  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 2900 6850 60  0001 C CNN
 F 3 "" H 2900 6850 60  0001 C CNN
 	1    2900 6850
 	1    0    0    -1  

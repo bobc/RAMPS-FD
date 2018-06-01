@@ -1886,6 +1886,7 @@ F0 "FID" 0 -200 60 H V C CNN
 F1 "Fiducial" 0 150 60 H V C CNN
 F2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" -100 -300 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
+F4 "No" 100 -100 60 H I C CNN "Populate"
 DRAW
 C 0 0 71 0 1 0 N
 P 2 0 1 0  -100 0  100 0 N
@@ -2153,7 +2154,8 @@ DEF LOGO_OSHW M 0 40 Y Y 1 F N
 F0 "M" 0 150 60 H V C CNN
 F1 "LOGO_OSHW" 0 50 60 H V C CNN
 F2 "OSHW_logo_2" 0 -150 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
+F3 "" 0 150 60 H V C CNN
+F4 "No" 50 -50 60 H I C CNN "Populate"
 $FPLIST
  OSHW_logo_2
 $ENDFPLIST
@@ -2861,6 +2863,7 @@ F1 "NET-TIE" -45 -95 20 H V C CNN
 F2 "TIE-1MM" -90 -265 60 H I C CNN
 F3 "" 0 0 60 H V C CNN
 F4 "Copper jumper block" 20 -380 60 H I C CNN "Description"
+F5 "No" 0 -500 60 H I C CNN "Populate"
 DRAW
 S 0 -50 -100 50 0 1 0 f
 X ~ 1 100 0 100 L 20 20 1 1 I

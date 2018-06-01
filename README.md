@@ -2,9 +2,9 @@
 
 RAMPS for Due.
 
-THIS IS THE RELEASE BRANCH.
+THIS IS THE DEVELOPMENT BRANCH.
 
-DESIGNS WILL APPEAR HERE WHEN THEY ARE READY.
+Design files in the development branch are untested and not ready for manufacturing.
 
 Status
 -------

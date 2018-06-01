@@ -504,7 +504,7 @@ U 1 1 50FC2B85
 P 2250 6725
 F 0 "P202" H 2250 6975 50  0000 C CNN
 F 1 "3 2 1" V 2250 6775 40  0000 C CNN
-F 2 "pin_array:pin_array_3x2" H 2250 6725 60  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 2250 6725 60  0001 C CNN
 F 3 "" H 2250 6725 60  0001 C CNN
 	1    2250 6725
 	1    0    0    -1  
@@ -539,7 +539,7 @@ U 1 1 50FC2B31
 P 2250 4375
 F 0 "P201" H 2250 4625 50  0000 C CNN
 F 1 "3 2 1" V 2250 4425 40  0000 C CNN
-F 2 "pin_array:pin_array_3x2" H 2250 4375 60  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 2250 4375 60  0001 C CNN
 F 3 "" H 2250 4375 60  0001 C CNN
 	1    2250 4375
 	1    0    0    -1  
@@ -580,7 +580,7 @@ U 1 1 50FC294D
 P 2250 2025
 F 0 "P203" H 2250 2275 50  0000 C CNN
 F 1 "3 2 1" V 2250 2075 40  0000 C CNN
-F 2 "pin_array:pin_array_3x2" H 2250 2025 60  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 2250 2025 60  0001 C CNN
 F 3 "" H 2250 2025 60  0001 C CNN
 	1    2250 2025
 	1    0    0    -1  

@@ -66,7 +66,7 @@ Wire Wire Line
 Wire Wire Line
 	9800 5200 10250 5200
 Wire Wire Line
-	9450 5050 9450 5450
+	9450 5000 9450 5450
 Wire Wire Line
 	2850 5350 4350 5350
 Wire Wire Line
@@ -75,10 +75,10 @@ Wire Wire Line
 	2850 5350 2850 5300
 Connection ~ 3650 2050
 Wire Wire Line
-	3650 2050 3650 1700
+	3650 2050 3650 1650
 Connection ~ 9600 1950
 Wire Wire Line
-	9600 1950 9600 1600
+	9600 1950 9600 1550
 Wire Wire Line
 	4500 1850 4100 1850
 Wire Wire Line
@@ -113,22 +113,22 @@ Wire Wire Line
 Wire Wire Line
 	10000 1750 10000 850 
 Wire Wire Line
-	9600 650  9600 1200
+	9600 650  9600 1250
 Connection ~ 3650 850 
 Wire Wire Line
-	3350 5000 3350 5500
+	3350 4950 3350 5500
 Wire Wire Line
 	2700 2050 4500 2050
 Wire Wire Line
 	2700 2050 2700 2000
 Wire Wire Line
-	3650 700  3650 1300
+	3650 700  3650 1350
 Wire Wire Line
 	4350 5150 3750 5150
 Wire Wire Line
 	3750 5150 3750 4300
 Wire Wire Line
-	9450 4050 9450 4650
+	9450 4050 9450 4700
 Wire Wire Line
 	9000 5400 10250 5400
 Wire Wire Line
@@ -142,7 +142,7 @@ Wire Wire Line
 Wire Wire Line
 	2000 5800 3050 5800
 Wire Wire Line
-	3350 4150 3350 4600
+	3350 4150 3350 4650
 Text Notes 6750 1800 0    80   ~ 0
 FET4 - Extruder 3 / Fan
 Text Notes 6850 4750 0    80   ~ 0
@@ -218,7 +218,7 @@ F 3 "" H 4850 1950 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DIODE D404
+L D D404
 U 1 1 51A9D334
 P 3650 1500
 F 0 "D404" H 3650 1600 40  0000 C CNN
@@ -226,10 +226,10 @@ F 1 "ES1F" H 3650 1400 40  0000 C CNN
 F 2 "rmc:DO-214AC" H 3650 1500 60  0001 C CNN
 F 3 "" H 3650 1500 60  0001 C CNN
 	1    3650 1500
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
-L DIODE D403
+L D D403
 U 1 1 519E92CD
 P 9600 1400
 F 0 "D403" H 9600 1500 40  0000 C CNN
@@ -237,10 +237,10 @@ F 1 "ES1F" H 9600 1300 40  0000 C CNN
 F 2 "rmc:DO-214AC" H 9600 1400 60  0001 C CNN
 F 3 "" H 9600 1400 60  0001 C CNN
 	1    9600 1400
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
-L DIODE D401
+L D D401
 U 1 1 519E9216
 P 3350 4800
 F 0 "D401" H 3350 4900 40  0000 C CNN
@@ -248,10 +248,10 @@ F 1 "ES1F" H 3350 4700 40  0000 C CNN
 F 2 "rmc:DO-214AC" H 3350 4800 60  0001 C CNN
 F 3 "" H 3350 4800 60  0001 C CNN
 	1    3350 4800
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
-L DIODE D402
+L D D402
 U 1 1 5186017E
 P 9450 4850
 F 0 "D402" H 9450 4950 40  0000 C CNN
@@ -259,7 +259,7 @@ F 1 "ES1F" H 9450 4750 40  0000 C CNN
 F 2 "rmc:DO-214AC" H 9450 4850 60  0001 C CNN
 F 3 "" H 9450 4850 60  0001 C CNN
 	1    9450 4850
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L CONN_2 P218
@@ -273,7 +273,7 @@ F 3 "" H 10700 1850 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D204
+L LED-RESCUE-RAMPS-FD D204
 U 1 1 51770EF9
 P 8900 1700
 AR Path="/51770EF9" Ref="D204"  Part="1" 
@@ -401,7 +401,7 @@ Non-inverting drivers
 Text Notes 5400 750  0    120  ~ 24
 MOSFET Outputs
 $Comp
-L LED D203
+L LED-RESCUE-RAMPS-FD D203
 U 1 1 51047AB7
 P 2850 5100
 AR Path="/51047AB7" Ref="D203"  Part="1" 
@@ -444,7 +444,7 @@ F 3 "" H 9000 4600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D202
+L LED-RESCUE-RAMPS-FD D202
 U 1 1 510479AE
 P 9000 5150
 AR Path="/510479AE" Ref="D202"  Part="1" 
@@ -457,7 +457,7 @@ F 3 "" H 9000 5150 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED D201
+L LED-RESCUE-RAMPS-FD D201
 U 1 1 510478C6
 P 2700 1800
 AR Path="/510478C6" Ref="D201"  Part="1" 

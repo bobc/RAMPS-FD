@@ -1,4 +1,4 @@
-update=17/07/2016 13:18:27
+update=01/06/2018 17:17:13
 version=1
 last_client=kicad
 [general]
@@ -49,6 +49,16 @@ LibName17=w_smd_resistors
 LibName18=w_smd_dil
 LibName19=w_conn_pt-1,5
 LibName20=w_smd_diode
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=Docs/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=../KiCAD_Libraries/library
@@ -84,13 +94,3 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=library/RMC
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=Docs/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
