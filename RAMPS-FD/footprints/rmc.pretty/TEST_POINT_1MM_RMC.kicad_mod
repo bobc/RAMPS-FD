@@ -1,0 +1,12 @@
+(module TEST_POINT_1MM_RMC (layer F.Cu) (tedit 5491E151)
+  (descr "test point")
+  (tags DEV)
+  (fp_text reference TP (at 1.3 0) (layer F.SilkS)
+    (effects (font (size 0.508 0.508) (thickness 0.127)))
+  )
+  (fp_text value VREF (at 0 1.905) (layer F.SilkS) hide
+    (effects (font (size 1.016 1.016) (thickness 0.254)))
+  )
+  (fp_circle (center 0 0) (end 0.7 0) (layer F.SilkS) (width 0.15))
+  (pad 1 smd circle (at 0 0) (size 1.016 1.016) (layers F.Cu F.Paste F.Mask))
+)
