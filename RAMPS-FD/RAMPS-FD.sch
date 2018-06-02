@@ -406,7 +406,7 @@ U 1 1 52475D81
 P 10350 5100
 F 0 "P102" V 10300 5100 40  0000 C CNN
 F 1 "RESET" V 10400 5100 40  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 10350 5100 60  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 10350 5100 60  0001 C CNN
 F 3 "" H 10350 5100 60  0000 C CNN
 	1    10350 5100
 	1    0    0    -1  
@@ -736,4 +736,39 @@ F 4 "No" H 10000 3975 60  0001 C CNN "Populate"
 	1    10000 3975
 	1    0    0    -1  
 $EndComp
+Text GLabel 4800 7200 2    50   Output ~ 0
+STEP_Y_CS
+$Comp
+L CONN_02X06 J2
+U 1 1 5B124015
+P 4550 7350
+F 0 "J2" H 4550 7700 50  0000 C CNN
+F 1 "CONN_02X06" H 4550 7000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x06_Pitch2.54mm" H 4550 6150 50  0001 C CNN
+F 3 "" H 4550 6150 50  0001 C CNN
+	1    4550 7350
+	1    0    0    -1  
+$EndComp
+Text GLabel 4800 7100 2    50   Output ~ 0
+STEP_X_CS
+Text GLabel 4800 7300 2    50   Output ~ 0
+STEP_Z_CS
+Text GLabel 4800 7400 2    50   Output ~ 0
+STEP_E0_CS
+Text GLabel 4800 7500 2    50   Output ~ 0
+STEP_E1_CS
+Text GLabel 4800 7600 2    50   Output ~ 0
+STEP_E2_CS
+Text GLabel 4300 7600 0    50   BiDi ~ 0
+D33
+Text GLabel 4300 7500 0    50   BiDi ~ 0
+D31
+Text GLabel 4300 7400 0    50   BiDi ~ 0
+D29
+Text GLabel 4300 7300 0    50   BiDi ~ 0
+D27
+Text GLabel 4300 7200 0    50   BiDi ~ 0
+D25
+Text GLabel 4300 7100 0    50   BiDi ~ 0
+D23
 $EndSCHEMATC

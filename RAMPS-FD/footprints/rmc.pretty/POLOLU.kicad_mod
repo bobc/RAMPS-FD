@@ -29,12 +29,12 @@
   (pad 14 thru_hole circle (at -3.81 -12.7) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask F.SilkS))
   (pad 15 thru_hole circle (at -6.35 -12.7) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask F.SilkS))
   (pad 16 thru_hole circle (at -8.89 -12.7) (size 1.524 1.524) (drill 0.8128) (layers *.Cu *.Mask F.SilkS))
-  (model Socket_Strips.3dshapes\Socket_Strip_Straight_1x08.wrl
+  (model Socket_Strips.3dshapes/Socket_Strip_Straight_1x08_Pitch2.54mm.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
-  (model Socket_Strips.3dshapes\Socket_Strip_Straight_1x08.wrl
+  (model Socket_Strips.3dshapes/Socket_Strip_Straight_1x08_Pitch2.54mm.wrl
     (at (xyz 0 0.5 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

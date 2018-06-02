@@ -75,7 +75,7 @@ U 1 1 523A3E0D
 P 2850 4700
 F 0 "JP102" H 2850 5000 60  0000 C CNN
 F 1 "VSEL" H 2850 4875 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 2850 4700 60  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 2850 4700 60  0001 C CNN
 F 3 "" H 2850 4700 60  0001 C CNN
 	1    2850 4700
 	1    0    0    -1  
@@ -94,7 +94,7 @@ U 1 1 523A08CA
 P 3950 5500
 F 0 "JP1" H 3950 5400 60  0000 C CNN
 F 1 "VIN" H 3950 5300 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3950 5500 60  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3950 5500 60  0001 C CNN
 F 3 "" H 3950 5500 60  0001 C CNN
 	1    3950 5500
 	1    0    0    -1  
@@ -222,7 +222,7 @@ U 1 1 51786528
 P 5100 7050
 F 0 "JP101" V 5050 7350 60  0000 C CNN
 F 1 "VLOG" V 5150 7325 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 5100 7050 60  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5100 7050 60  0001 C CNN
 F 3 "" H 5100 7050 60  0001 C CNN
 	1    5100 7050
 	0    -1   1    0   
@@ -351,7 +351,7 @@ AR Path="/50FC27BA" Ref="C101"  Part="1"
 AR Path="/5239FE5C/50FC27BA" Ref="C101"  Part="1" 
 F 0 "C101" H 6600 3400 50  0000 L CNN
 F 1 "100u 35V" H 6600 3200 50  0000 L CNN
-F 2 "Capacitors_SMD:c_elec_6.3x7.7" H 6550 3300 60  0001 C CNN
+F 2 "Capacitors_SMD:CP_Elec_6.3x7.7" H 6550 3300 60  0001 C CNN
 F 3 "" H 6550 3300 60  0001 C CNN
 	1    6550 3300
 	1    0    0    -1  
@@ -394,7 +394,7 @@ L LM7812 U3
 U 1 1 523E1258
 P 2000 4750
 F 0 "U3" H 2150 4554 60  0000 C CNN
-F 1 "LM7812" H 2000 4950 60  0000 C CNN
+F 1 "R-78E12-0.5" H 2000 4950 60  0000 C CNN
 F 2 "discret:LM78XXV" H 2000 4750 60  0001 C CNN
 F 3 "~" H 2000 4750 60  0000 C CNN
 	1    2000 4750
@@ -488,7 +488,7 @@ U 1 1 52C45B66
 P 3700 6900
 F 0 "JP201" H 3700 6825 60  0000 C CNN
 F 1 "5V_SEL" H 3675 6725 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3700 6900 60  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3700 6900 60  0001 C CNN
 F 3 "~" H 3700 6900 60  0000 C CNN
 	1    3700 6900
 	1    0    0    -1  
@@ -616,6 +616,12 @@ F 3 "" H 2000 5450 50  0000 C CNN
 	1    2000 5500
 	1    0    0    -1  
 $EndComp
+Text Notes 3850 6225 0    60   Italic 0
+Arduino base board
+Text Notes 5375 6525 0    50   ~ 0
+Note: On R3 compatible Arduinos, IOREF \nwill supply 3.3V (Due), or 5V (Mega).\n\nIf IOREF is not provided (non-R3) then it \nmust be a 5V Arduino so set VLOG to 5V.
+Text Notes 9550 4700 0    60   ~ 0
+Capacitors rated to at least 25V \nunless otherwise stated
 Connection ~ 2850 4950
 Connection ~ 3950 4950
 Wire Wire Line
@@ -861,8 +867,6 @@ Wire Notes Line
 	5250 6450 3275 6450
 Wire Wire Line
 	4925 5500 4925 5525
-Text Notes 3850 6225 0    60   Italic 0
-Arduino base board
 Wire Wire Line
 	3375 6775 3375 6900
 Wire Wire Line
@@ -897,8 +901,6 @@ Wire Notes Line
 	5350 6100 5350 6550
 Wire Notes Line
 	5350 6550 7000 6550
-Text Notes 5375 6525 0    50   ~ 0
-Note: On R3 compatible Arduinos, IOREF \nwill supply 3.3V (Due), or 5V (Mega).\n\nIf IOREF is not provided (non-R3) then it \nmust be a 5V Arduino so set VLOG to 5V.
 Wire Notes Line
 	5350 6100 7000 6100
 Wire Notes Line
@@ -921,6 +923,18 @@ Wire Wire Line
 	4600 2550 4450 2550
 Wire Wire Line
 	4450 2650 4450 3650
-Text Notes 9550 4700 0    60   ~ 0
-Capacitors rated to at least 25V \nunless otherwise stated
+$Comp
+L PWR_FLAG #FLG035
+U 1 1 5B126588
+P 7850 3600
+F 0 "#FLG035" H 7850 3695 30  0001 C CNN
+F 1 "PWR_FLAG" H 7850 3780 30  0000 C CNN
+F 2 "" H 7850 3600 60  0001 C CNN
+F 3 "" H 7850 3600 60  0001 C CNN
+	1    7850 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 3600 7850 3650
+Connection ~ 7850 3650
 $EndSCHEMATC
